@@ -1,13 +1,943 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headTitle{
+  font-size: clamp(16px, 4vw, 27px) !important;
+  line-height: 1.2;
+}
+
+.imagetext{
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.parentofcontact{
+padding-bottom: 8px;
+}
+
+.reviewParent{
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.contactusParent{
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.reviewParent .MuiGrid-container>div:nth-child(odd) {
+  margin-top: 0;
+}
+
+.counter{
+  font-size: xx-large  !important;
+  font-weight: 500 !important;
+}
+
+h6{
+  font-weight: 900 !important;
+  color: #ffde0f;
+}
+
+.imageSliders {
+  height: 50vh;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.serviceImg {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.serviceImg > img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.MuiCardContent-root,.MuiCardActions-root{
+  padding-bottom: 0px !important;
+}
+
+/* .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded{
+  height: 100% !important;
+} */
+
+/* .serviceImg.box2boxClass{
+  height: 65% !important;
+}
+
+.parentofservices>div:nth-child(1)>:nth-child(1){
+  display: none !important;
+} */
+
+.container-padding {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.contact-section {
+  padding: 4rem 24px !important;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.contact-left {
+  padding-right: 2rem;
+}
+
+.company-name {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem !important;
+  color: #2c3e50;
+}
+
+.company-description {
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  color: #495057;
+}
+
+.section-title {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+  color: #2c3e50;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info .MuiSvgIcon-root {
+  color: #ffde0f;
+  margin-right: 8px;
+}
+
+.demo-button {
+  background-color: #25D366 !important;
+  color: white !important;
+  padding: 10px 24px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  border-radius: 8px !important;
+}
+
+.social-icon {
+  color: #2c3e50;
+  font-size: 28px !important;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffde0f;
+}
+
+.phone-number {
+  color: #ffde0f !important;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.phone-number:hover {
+  color: #ffd700 !important;
+}
+
+@media only screen and (max-width: 780px) {
+  .headTitle {
+    margin-top: 10px !important;
+    font-size: 16px !important;
+  }
+  .appBarOpt{
+    margin-left: 39px !important;
+  }
+  .headerContact{
+    margin-top: 3px;
+  }
+  .imageSliders>div>div > *:nth-child(2){
+    left: 0px !important;
+  }
+  .imageSliders>div>div > *:nth-child(3){
+    right: 0px !important;
+  }
+  .parentofservices>div > *:nth-child(2)>div >*:nth-child(1){
+    display: none;
+  }
+  .parentofservices>div > *:nth-child(2)>div >*:nth-child(5){
+    display: none;
+  }
+  .parentofservices>div > *:nth-child(2)>div{
+    justify-content: space-around !important;
+  }
+  .parentofservices .serviceTitle{
+    text-align: center;
+  }
+  .serviceCardContent{
+    max-height: none;
+    height: auto;
+  }
+  .reviewWrapper{
+    height: auto;
+    min-height: 81vh;
+  }
+  .parentofachievements{
+    height: 29vh;
+  }
+  .parentofachievements>div > *:nth-child(2)>*:nth-child(1){
+    display: none;
+  }
+  .parentofachievements>div > *:nth-child(2)>*:nth-child(5){
+    display: none;
+  }
+  .parentofachievements h6{
+    font-size: 14px !important; 
+  }
+  .contactusParent h6{
+    font-size: 14px !important; 
+  }
+  .appBarOpt{
+    padding-left: 0px !important;
+  }
+  .headerContact{
+    margin-top: 2px !important;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .reviewParent {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .contactusParent {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .reviewParent .MuiGrid-container>div:nth-child(odd) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .imagetext h1 {
+    font-size: clamp(18px, 3vw, 24px) !important;
+  }
+  
+  .parentofachievements {
+    padding: 2rem 0;
+  }
+  
+  .counter {
+    font-size: clamp(20px, 4vw, 32px) !important;
+  }
+
+  .contact-section {
+    padding: 3rem 16px !important;
+  }
+
+  .company-name {
+    font-size: 2rem !important;
+  }
+
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .headTitle {
+    margin-top: 10px !important;
+    font-size: 16px !important;
+  }
+  .appBarOpt{
+    margin-left: 39px !important;
+  }
+  .headerContact{
+    margin-top: 3px;
+  }
+  .imageSliders>div>div > *:nth-child(2){
+    left: 0px !important;
+  }
+  .imageSliders>div>div > *:nth-child(3){
+    right: 0px !important;
+  }
+  .parentofservices>div > *:nth-child(2)>div >*:nth-child(1){
+    display: none;
+  }
+  .parentofservices>div > *:nth-child(2)>div >*:nth-child(5){
+    display: none;
+  }
+  .parentofservices>div > *:nth-child(2)>div{
+    justify-content: space-around !important;
+  }
+  .parentofservices .serviceTitle{
+    text-align: center;
+  }
+  .serviceCardContent {
+    height: auto !important;
+    overflow: visible;
+  }
+  .reviewWrapper {
+    height: auto;
+    min-height: 81vh;
+  }
+  .parentofachievements{
+    height: 29vh;
+  }
+  .parentofachievements>div > *:nth-child(2)>*:nth-child(1){
+    display: none;
+  }
+  .parentofachievements>div > *:nth-child(2)>*:nth-child(5){
+    display: none;
+  }
+  .parentofachievements h6{
+    font-size: 14px !important; 
+  }
+  .contactusParent h6{
+    font-size: 14px !important; 
+  }
+  .appBarOpt{
+    padding-left: 0px !important;
+  }
+  .headerContact{
+    margin-top: 2px !important;
+  }
+  .slider-container {
+    padding-top: 64px; /* Height of AppBar */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .parentofservices .MuiGrid-item {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .imageSliders {
+    height: 40vh;
+  }
+  
+  .MuiCardActions-root {
+    padding: 8px !important;
+  }
+  
+  .parentofachievements .MuiGrid-container {
+    gap: 1rem;
+  }
+
+  .MuiTypography-root {
+    font-size: 12px !important;
+  }
+
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+}
+
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+}
+
