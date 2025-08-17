@@ -1,9 +1,9 @@
 import SimpleImageSlider from "react-simple-image-slider";
 // import Images from "../Asset/Images/images.jpeg";
 import ImageText from "../components/ImageText";
-import RecycleImage from '../Asset/Images/yellowDustBin.jpg'
-import HumanRecycleImage from '../Asset/Images/humanRecycle.jpg'
-import LittleGirlRecycleImage from '../Asset/Images/littleGirl.jpg'
+import RecycleImage from '../Asset/Images/Untitleddesign.png'
+import HumanRecycleImage from '../Asset/Images/Untitleddesign1.png'
+import LittleGirlRecycleImage from '../Asset/Images/Untitleddesign2.png'
 const images = [{ url: LittleGirlRecycleImage }, { url: HumanRecycleImage }, { url: RecycleImage }];
 
 const ImageSlide = () => {
