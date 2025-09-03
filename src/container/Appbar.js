@@ -31,13 +31,19 @@ function Appbar() {
                 spacing={1}
               >
                 <Grid item>
-                  <Grid container justifyContent="space-between" alignItems={"center"} marginTop={"10px"} spacing={2}>
-                  <Typography variant="h5" className="headTitle">
-                    SCRAP HARBOR
-                  </Typography>
-                  <Typography variant="body1" className="headerContact">
-                    +91 84381 92377
-                  </Typography>
+                  <Grid container justifyContent="space-between" alignItems="center" sx={{ padding: '12px 16px' }}>
+                    <Typography variant="h5" className="headTitle mobile-title">
+                      SCRAP HARBOR
+                    </Typography>
+                    <Typography 
+                      variant="h6" 
+                      className="headerContact mobile-contact"
+                      component="a"
+                      href="tel:+918438192377"
+                      sx={{ textDecoration: 'none' }}
+                    >
+                      +91 84381 92377
+                    </Typography>
                   </Grid>
                 </Grid>
                 <Grid item>

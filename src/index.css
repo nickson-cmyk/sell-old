@@ -396,8 +396,19 @@ h6{
     padding: 0 10px;
   }
 
-  .slider-container {
-    padding-top: 56px; /* Height of AppBar on mobile */
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -663,6 +674,21 @@ h6{
     font-size: 1.2rem !important;
     line-height: 1.4 !important;
     padding: 0 10px;
+  }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -939,5 +965,2191 @@ h6{
     line-height: 1.4 !important;
     padding: 0 10px;
   }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
+  }
 }
 
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #ffde0f !important;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 780px) {
+  .termParent {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .term-heading {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .term-description {
+    font-size: 14px !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: #25D366 !important;
+  z-index: 1000 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E !important;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding-top: 64px; /* Height of AppBar */
+  width: 100%;
+  height: calc(100vh - 64px); /* Full viewport height minus AppBar height */
+  overflow: hidden;
+}
+
+.imageSliders {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSliders > div,
+.imageSliders > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.imageSliders img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    padding-top: 56px; /* Height of AppBar on mobile */
+    height: calc(100vh - 56px);
+  }
+  
+  .parentofservices .MuiGrid-container {
+    gap: 1rem;
+  }
+  
+  .imageSliders {
+    height: 50vh;
+  }
+  
+  .imageSliders > div,
+  .imageSliders > div > div {
+    height: 100% !important;
+  }
+  
+  .parentofcontact {
+    padding: 1rem;
+  }
+  
+  h6 {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+
+  .contact-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .company-name {
+    font-size: 1.75rem !important;
+  }
+
+  .company-description {
+    font-size: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem 12px !important;
+  }
+
+  .whatsapp-button {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  .imagetext h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px;
+  }
+
+  .mobile-title {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-contact {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.services-header {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .services-header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.parentofservices {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serviceCardContent {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.reviewParent {
+  margin-top: 2rem;
+  /* ...existing code... */
+}
+.serviceCardContent {
+  flex-grow: 1;
+}
+  .terms-header {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .achievement-item {
+    padding: 0.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .counter {
+    font-size: 20px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .termParent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .term-heading {
+    font-size: 14px !important;
+  }
+
+  .term-description {
+    font-size: 12px !important;
+  }
+
+@media screen and (max-width: 320px) {
+  .imageSliders {
+    height: 35vh;
+  }
+  
+  .parentofcontact {
+    padding: 0.5rem;
+  }
+  
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
+  
+  .MuiTypography-root {
+    font-size: 11px !important;
+  }
+
+  .container-padding,
+  .reviewParent,
+  .contactusParent {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.achievement-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .parentofachievements {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 2rem 0;
+  }
+  
+  .achievement-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-item h6 {
+    font-size: 14px !important;
+    min-height: auto;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .counter {
+    font-size: 24px !important;
+  }
+}
+
+.termParent {
+  min-height: fit-content;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+.term-heading {
+  margin-bottom: 1rem !important;
+}
+
+.term-description {
+  text-align: left;
+  margin-bottom: 2rem !important;
+}
