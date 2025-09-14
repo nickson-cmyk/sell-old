@@ -8,6 +8,10 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 const Footer = () => {
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/918438192377', '_blank');
+  };
+
   return (
     <Grid
       container
@@ -97,12 +101,14 @@ const Footer = () => {
         <Button
           variant="outlined"
           sx={{ borderRadius: "30px", paddingX: "1.5rem" }}
+          onClick={handleWhatsAppClick}
         >
           Book Pickup
         </Button>
         <Button
           variant="contained"
           sx={{ borderRadius: "30px", paddingX: "1.5rem" }}
+          onClick={handleWhatsAppClick}
         >
           Contact Us
         </Button>

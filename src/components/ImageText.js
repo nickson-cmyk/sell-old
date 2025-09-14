@@ -10,7 +10,7 @@ const ImageText = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/918012377237', '_blank');
+    window.open('https://wa.me/918438192377', '_blank');
   };
 
   return (
