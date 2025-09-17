@@ -4,7 +4,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/918438192377', '_blank');
+    window.open('https://wa.me/918438192377?text=Hi%2C%20I%20could%20like%20to%20book%20a%20scrap%20pickup%20appointment', '_blank');
   };
 
   return (

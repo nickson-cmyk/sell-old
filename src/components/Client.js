@@ -9,7 +9,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/918438192377', '_blank');
+    window.open('https://wa.me/918438192377?text=Hi%2C%20I%20could%20like%20to%20book%20a%20scrap%20pickup%20appointment', '_blank');
   };
 
   return (
@@ -123,7 +123,7 @@ const Footer = () => {
 
       {/* WhatsApp Floating Button */}
       <IconButton
-        href="https://wa.me/918438192377"
+        href="https://wa.me/918438192377?text=Hi%2C%20I%20could%20like%20to%20book%20a%20scrap%20pickup%20appointment"
         target="_blank"
         sx={{
           position: "fixed",
